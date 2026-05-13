@@ -1,0 +1,1 @@
+This folder contains reference screenshots and system notes from the Stitch UI handoff. Use them as visual guidance for the frontend implementation.

@@ -1,0 +1,13 @@
+privacy:
+  redact_patterns:
+    - phone
+    - email
+    - home_address
+    - employee_id
+request_limits:
+  per_minute: 10
+  per_hour: 100
+  per_day: 500
+logging:
+  audit_requests: true
+  include_redacted_fields: false

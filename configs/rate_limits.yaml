@@ -1,0 +1,4 @@
+limits:
+  per_minute: 10
+  per_hour: 100
+  per_day: 500

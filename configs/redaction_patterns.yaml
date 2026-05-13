@@ -1,0 +1,13 @@
+patterns:
+  phone:
+    regex: '(?:\+?1[-.\s]?)?(?:\(?\d{3}\)?[-.\s]?)\d{3}[-.\s]?\d{4}'
+    replacement: '[REDACTED_PHONE]'
+  email:
+    regex: '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'
+    replacement: '[REDACTED_EMAIL]'
+  home_address:
+    regex: '\b\d{1,5}\s+[A-Za-z0-9.\-\s]+\s+(?:St|Street|Ave|Avenue|Rd|Road|Blvd|Boulevard|Ln|Lane|Dr|Drive|Ct|Court|Way|Ter|Terrace)\b'
+    replacement: '[REDACTED_ADDRESS]'
+  employee_id:
+    regex: '\b(?:EMP|DRV|ID)-?\d{3,8}\b'
+    replacement: '[REDACTED_ID]'
