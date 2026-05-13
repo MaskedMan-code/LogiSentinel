@@ -48,7 +48,7 @@ LogiSentinel was built from the ground up for **Agent Security & AI Governance**
 
 Want to test the security guardrails yourself? 
 
-1. Visit the [Live Dashboard](https://logi-sentinel-xk7n.vercel.app/enterprise).
+1. Visit the [Live Dashboard]([https://logi-sentinel-xk7n.vercel.app/enterprise]).
 2. Navigate to the **AI Diagnostics** tab.
 3. Select any fleet vehicle from the dropdown.
 4. Try to trick the system into leaking data by typing: 
