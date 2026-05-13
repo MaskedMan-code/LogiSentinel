@@ -16,7 +16,7 @@ export default function DiagnosticsChat() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/diagnostics/ask", {
+      const response = await fetch("https://logisentinel.onrender.com/api/diagnostics/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
