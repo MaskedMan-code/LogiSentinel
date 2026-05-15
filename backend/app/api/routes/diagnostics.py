@@ -60,6 +60,14 @@ def ask(payload: DiagnosticRequest, request: Request):
         
 answer = """**Diagnostic Complete: Code P0171 (System Too Lean - Bank 1)**
 
+log_event("diagnostics.ask", {"ip": client_ip, "vehicle_id": payload.vehicle_id, "matches": matches})
+
+    return DiagnosticResponse(
+        answer=answer,
+        model=settings.gemini_model,
+        sources=[payload.manual_title] if payload.manual_title else [],
+        metadata={"redacted_matches": matches}
+    )
 Based on the LLV Electrical & Engine systems manual, a P0171 code indicates the engine is receiving too much air or not enough fuel. 
 
 **Likely Causes:**
